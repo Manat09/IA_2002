@@ -1,0 +1,3 @@
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/yerasylamanbek/CLionProjects/L1_IA2002/cmake-build-debug/CMakeFiles/L1_IA2002.dir
