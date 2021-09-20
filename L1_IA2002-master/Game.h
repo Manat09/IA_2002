@@ -2,6 +2,9 @@
 #define L1_IA2002_GAME_H
 #include <iostream>
 #include <string>
+#include <thread>
+#include <ctime>
+#include <cstdlib>
 #include "Character.h"
 #include "Item.h"
 #include "Fight.h"
