@@ -10,9 +10,10 @@ void ToThink(){
                            "I will overcome enemies and become the strongest.",
                            "I ought to go to my parents somehow."};
     srand( time( 0 ) );
-    for(size_t i = 0; i<=5; i++){
-        cout<<this_thread::get_id()<<"\n*****************\n"<<thoughts[rand()%4]<<"\n*****************\n";
-        this_thread::sleep_for(chrono::milliseconds(10000));
+    for(size_t i = 0; i<=20; i++){
+        this_thread::sleep_for(chrono::milliseconds(rand()%20000+10000));
+        cout<<"\n*****************\n"<<thoughts[rand()%4]<<"\n*****************\n";
+
     }
 }
 
