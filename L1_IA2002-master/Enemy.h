@@ -23,7 +23,7 @@ private:
     int HP;
     int maxHP;
     int atk;
-
+    //int rarity;
 };
 
 

@@ -9,6 +9,8 @@ public:
     Fight();
     void startFight(Character character, Enemy enemy);
     void endFight(Character character, bool win);
+    bool aliveCheck(Character character, Enemy enemy);
+
 private:
     bool win;
 

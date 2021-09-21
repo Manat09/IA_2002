@@ -7,7 +7,8 @@ Character::Character() {
     maxHP = 0;
     Atk = 0;
     level = 0;
-    exp= 0;
+    exp = 0;
+    gold = 0;
     //item = Item();
     //Create initial character
 }
@@ -19,13 +20,15 @@ void Character::createCharacter(string name){
     Atk = 1;
     level = 1;
     exp= 0;
+    gold = 0;
 }
 
 string Character::toStringStats() {
     string string1;
     string1 = "Name "+getName()+"\n"+"HP "+ to_string(getHp()) + "/"+to_string(getMaxHp())+"\n"+
-            +"Atk "+to_string(getAtk())+"\n"+"Level "+to_string(getLevel())+"\n"+"Exp "+to_string(getExp())+"\n";
-            //+"Inventory: "+item[0].getName()+" "+ to_string(item[0].getAtk())+"\n";//
+              +"Atk "+to_string(getAtk())+"\n"+"Level "+to_string(getLevel())+"\n"+"Exp "+
+              to_string(getExp())+"\n"+"Gold "+to_string(getGold())+"\n";
+    //+"Inventory: "+item[0].getName()+" "+ to_string(item[0].getAtk())+"\n";//
     string1=string1+ "Inventory: \n";
     for (int i = 0; i < 3; i++) {
         if (item[i].getName() != "Test") {
@@ -55,6 +58,10 @@ void Character::gainExp(int exp){
 
 }
 
+void Character::gainGold(int gold) {
+    Character::gold = Character::gold + gold;
+}
+
 
 const string &Character::getName() const {
     return name;
@@ -80,6 +87,14 @@ int Character::getExp() const {
     return exp;
 }
 
+Item Character::getItem(int slot) const{
+    return item[slot];
+}
+
+int Character::getGold(){
+    return gold;
+}
+
 void Character::setName(const string &name) {
     Character::name = name;
 }
@@ -102,6 +117,10 @@ void Character::setLevel(int level) {
 
 void Character::setExp(int exp) {
     Character::exp = exp;
+}
+
+void Character::setGold(int gold){
+    Character::gold = gold;
 }
 
 void Character::lootItem(Item itemReceived){//slot 0 weapon, slot 1 armor, slot 2 legs

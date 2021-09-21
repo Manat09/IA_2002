@@ -28,6 +28,7 @@ public:
 
     int getExp() const;
 
+    Item getItem(int slot) const;
 
 
 public:
@@ -43,6 +44,12 @@ public:
 
     void setExp(int exp);
 
+    int getGold();
+
+    void gainGold(int gold);
+
+    void setGold(int gold);
+
     void lootItem(Item item);
 
 private:
@@ -52,6 +59,7 @@ private:
     int Atk;
     int level;
     int exp;
+    int gold;
     Item item[3];//slot 0 weapon, slot 1 armor, slot 2 legs
 
 public:

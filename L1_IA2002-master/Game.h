@@ -15,9 +15,10 @@ public:
     Game();
     void mainMenu();
     void startMenu();
+    void exploreMenu(Character character);
     int getChoice() const;
     bool isPlaying() const;
-
+    Enemy chooseEnemy();
 private:
     int choice;
     bool playing;
