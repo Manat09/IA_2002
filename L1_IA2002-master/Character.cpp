@@ -116,7 +116,7 @@ void Character::setExp(int exp) {
 void Character::setGold(int gold){
     Character::gold = gold;
 }
-//this func. for loot item after fight, if we will win
+//this function for loot item after fight, if we will win
 void Character::lootItem(Item itemReceived){//slot 0 weapon, slot 1 armor, slot 2 legs
     int slot;
     if (itemReceived.getCategory()=="Weapon"){

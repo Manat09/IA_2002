@@ -105,9 +105,6 @@ void Game::exploreMenu() {
                     //"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"<<"\n";
                 }
             }
-            //Enemy enemy1("Troll", 5, 5,2);
-            //fight.startFight(character, enemy);
-            //fight.startFight(character, enemy1);
             break;
         }
         case 2: {

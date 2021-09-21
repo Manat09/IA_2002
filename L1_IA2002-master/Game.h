@@ -11,7 +11,7 @@
 #include "Fight.h"
 using namespace std;
 
-class Game {
+class Game {//class game
 public:
     Game();
     void mainMenu();

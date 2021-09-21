@@ -3,7 +3,7 @@
 //Fight system
 //Enemy class
 //here we use parallel thread
-//and we can get any thoughts during our game
+//annd we can get any thoughts during our game
 void ToThink(){
     string thoughts[5] = { "I haven't eaten in almost 8 hours.",
                            "I want to sleep.",

@@ -1,10 +1,10 @@
 #include "Item.h"
 
-Item::Item() {
+Item::Item() {//
     name = "empty";
     Atk = 0;
 }
-
+//
 Item::Item(string Name, int ATK, string Category) {
     name = Name;
     Atk = ATK;

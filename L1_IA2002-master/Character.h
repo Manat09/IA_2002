@@ -54,7 +54,7 @@ public://show that this functions will be public
 
     void lootItem(Item item);
 
-private://shows that this values will be private
+private://shows that this values wil be private
     string name;
     int HP;
     int maxHP;

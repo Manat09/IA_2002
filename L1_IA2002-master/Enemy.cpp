@@ -6,7 +6,7 @@ Enemy::Enemy(string name,int HP, int maxHP,int atk) {
     this->maxHP = maxHP;
     this->atk = atk;
 }
-//and these setters and getters
+//and these seters and getters
 const string &Enemy::getName() const {
     return name;
 }

@@ -56,7 +56,7 @@ void Fight::endFight(Character character, bool win){
         character.setHp(1);
         game.startMenu();
     }//if we will win
-    //we will get these words, and will get new items
+    //we wil get these words, and will get new items
     else{
         cout<<"/////////////////////////////////////"<<endl;
         cout<<"Enemy is dead! You are alive..."<<endl;

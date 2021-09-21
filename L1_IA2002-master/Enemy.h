@@ -4,7 +4,7 @@
 using namespace std;
 //class Enemy
 class Enemy {
-public://shows that this functions will be public
+public://showws that this functions will be public
     Enemy(string name,int HP, int maxHP,int atk);
 
     const string &getName() const;
