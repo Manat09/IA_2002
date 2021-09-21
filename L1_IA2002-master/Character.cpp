@@ -1,4 +1,4 @@
-#include "Character.h"
+#include "Character.h"//including header file of C++ file Character
 
 
 Character::Character() {
@@ -22,7 +22,7 @@ void Character::createCharacter(string name){
     exp= 0;
     gold = 0;
 }
-
+//function that shows us our
 string Character::toStringStats() {
     string string1;
     string1 = "Name "+getName()+"\n"+"HP "+ to_string(getHp()) + "/"+to_string(getMaxHp())+"\n"+
@@ -31,13 +31,8 @@ string Character::toStringStats() {
     //+"Inventory: "+item[0].getName()+" "+ to_string(item[0].getAtk())+"\n";//
     string1=string1+ "Inventory: \n";
     for (int i = 0; i < 3; i++) {
-        if (item[i].getName() != "Test") {
-            string1 += item[i].getName() + " " + to_string(item[i].getAtk()) + "\n";
-        }
+        string1 += getItem(i).getName() + " " + to_string(item[i].getAtk()) + "\n";
     }
-
-
-
 
     return string1;
 
@@ -55,9 +50,8 @@ void Character::gainExp(int exp){
         HP = maxHP;
         Atk = Atk+1;
     }
-
 }
-
+//realize setters and getters
 void Character::gainGold(int gold) {
     Character::gold = Character::gold + gold;
 }
@@ -122,9 +116,8 @@ void Character::setExp(int exp) {
 void Character::setGold(int gold){
     Character::gold = gold;
 }
-
+//this func. for loot item after fight, if we will win
 void Character::lootItem(Item itemReceived){//slot 0 weapon, slot 1 armor, slot 2 legs
-
     int slot;
     if (itemReceived.getCategory()=="Weapon"){
         slot = 0;
@@ -136,8 +129,8 @@ void Character::lootItem(Item itemReceived){//slot 0 weapon, slot 1 armor, slot 
         slot = 2;
     }
 
-    if (item[slot].getAtk()>itemReceived.getAtk()){
-        return;
+    if (item[slot].getAtk()<itemReceived.getAtk()){
+        item[slot] = Item(itemReceived.getName(),itemReceived.getAtk(),itemReceived.getCategory());
     }
-    item[slot] = itemReceived;
+
 };

@@ -2,9 +2,9 @@
 #define L1_IA2002_ENEMY_H
 #include <string>
 using namespace std;
-
+//class Enemy
 class Enemy {
-public:
+public://shows that this functions will be public
     Enemy(string name,int HP, int maxHP,int atk);
 
     const string &getName() const;
@@ -18,12 +18,11 @@ public:
     void setHp(int hp);
 
 
-private:
+private://shows that this values will be private
     string name;
     int HP;
     int maxHP;
     int atk;
-    //int rarity;
 };
 
 

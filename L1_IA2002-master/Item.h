@@ -4,7 +4,7 @@
 using namespace std;
 
 class Item {
-public:
+public://shows that these functions will be public
     Item();
     Item(string name, int Atk, string category);
 
@@ -12,13 +12,12 @@ public:
 
     int getAtk() const;
 
-private:
+private://shows that this values will be private
     string name;
     int Atk;
     string category;
-public:
+public://shows that this function will be public
     const string &getCategory() const;
-
 };
 
 

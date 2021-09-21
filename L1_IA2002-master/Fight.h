@@ -3,9 +3,11 @@
 #include "Character.h"
 #include "Enemy.h"
 #include <iostream>
+#include "windows.h"//use this library for sleep() func.
+
 
 class Fight {
-public:
+public://show that this functions will be public
     Fight();
     void startFight(Character character, Enemy enemy);
     void endFight(Character character, bool win);

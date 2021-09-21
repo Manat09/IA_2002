@@ -7,15 +7,15 @@
 using namespace std;
 
 
-
+//
 class Character {
-public:
+public://shows that this functions will be public
     Character();
-    void createCharacter(string name);
+    void createCharacter(string name);//our function that Create character
     string toStringStats();
     void gainExp(int exp);
 
-public:
+public://shows that this functions will be public
     const string &getName() const;
 
     int getHp() const;
@@ -31,7 +31,9 @@ public:
     Item getItem(int slot) const;
 
 
-public:
+public://show that this functions will be public
+//as our values is private
+//we use setter and getter methods
     void setName(const string &name);
 
     void setHp(int hp);
@@ -52,7 +54,7 @@ public:
 
     void lootItem(Item item);
 
-private:
+private://shows that this values will be private
     string name;
     int HP;
     int maxHP;
@@ -60,9 +62,9 @@ private:
     int level;
     int exp;
     int gold;
-    Item item[3];//slot 0 weapon, slot 1 armor, slot 2 legs
+    Item item[3];
 
-public:
+public://shows that this functions will be public
     double getExpNext() const;
 
     void setExpNext(double expNext);

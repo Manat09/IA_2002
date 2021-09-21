@@ -5,6 +5,7 @@
 #include <thread>
 #include <ctime>
 #include <cstdlib>
+#include <vector>
 #include "Character.h"
 #include "Item.h"
 #include "Fight.h"
@@ -15,7 +16,7 @@ public:
     Game();
     void mainMenu();
     void startMenu();
-    void exploreMenu(Character character);
+    void exploreMenu();
     int getChoice() const;
     bool isPlaying() const;
     Enemy chooseEnemy();

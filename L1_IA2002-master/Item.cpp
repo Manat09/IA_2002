@@ -1,14 +1,14 @@
 #include "Item.h"
 
 Item::Item() {
-    this->name = "Test";
-    this->Atk = 0;
+    name = "empty";
+    Atk = 0;
 }
 
-Item::Item(string name, int Atk, string category) {
-    this->name = name;
-    this->Atk = Atk;
-    this->category = category;
+Item::Item(string Name, int ATK, string Category) {
+    name = Name;
+    Atk = ATK;
+    category = Category;
 }
 
 const string &Item::getName() const {

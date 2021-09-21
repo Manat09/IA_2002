@@ -2,7 +2,8 @@
 //Inventory with 3 best items
 //Fight system
 //Enemy class
-
+//here we use parallel thread
+//and we can get any thoughts during our game
 void ToThink(){
     string thoughts[5] = { "I haven't eaten in almost 8 hours.",
                            "I want to sleep.",
@@ -16,7 +17,7 @@ void ToThink(){
 
     }
 }
-
+//this main menu///where we call parallel thread and run our game
 int countChoices;
 int main() {
     thread th (ToThink);
